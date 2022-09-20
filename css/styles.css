@@ -1,0 +1,29 @@
+/* Цвет темный основного текста  #212121*/
+/* Белый цвет основного текста #FFFFFF*/
+/* Цвет дополнительного серого текста #757575*/
+/* Синий акцентный цвет #2196F3*/
+/*#EEEEEE*/
+/* Цвет лого #000000*/
+/*#F5F4FA*/
+/*цвет контакты футер #FFFFFF 60%*/
+/* Цвет бэкграунд герой футер #2F303A*/
+/*#ECECEC*/
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.logo {
+  color: #000000;
+}
+.logo-web {
+  color: #2196F3; }
+/*Site nav*/
