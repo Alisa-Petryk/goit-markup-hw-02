@@ -9,21 +9,126 @@
 /* Цвет бэкграунд герой футер #2F303A*/
 /*#ECECEC*/
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+:root{
+    --primary-text-color: #212121;
+    --accent-text-color: #000cae;
+    --description-text-color: #757575;
+    --white-text-color: #FFFFFF;
 }
+
+/*Common classes*/
+.list {
+    list-style: none;
+}
+.button {
+    color: var(--white-text-color);
+    background-color: var(--accent-text-color);
+}
+.button-secondary {
+    color: var(--primary-text-color) ;
+    background-color: #F5F4FA   ;
+}
+.current {
+    color: var(--white-text-color);
+    background-color: var(--accent-text-color);
+}
+
+/*Section*/
+.section-title {
+    color: var(--primary-text-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.body {
+    color: var(--primary-text-color);
+}
+
+/*Logo*/
 .logo {
   color: #000000;
 }
-.logo-web {
-  color: #2196F3; }
+.logo-accent {
+    color: var(--accent-text-color);
+}
+.logo :hover,
+.logo :focus {
+  color: var(--accent-text-color);
+}
+
 /*Site nav*/
+.site-nav .link{
+    color: var(--primary-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus
+{
+  color: var(--accent-text-color);
+}
+
+.site-nav-contact .link {
+    color: var(--description-text-color)
+}
+
+.site-nav-contact .link:hover,
+.site-nav-contact .link:focus {
+  color: var(--accent-text-color);
+}
+.site-nav .gray:hover,
+.site-nav .gray:focus {
+  color: var(--accent-text-color);
+}
+
+.gray {
+ color: var(--description-text-color);
+}
+
+/*Hero*/
+.hero-title {
+  color: #FFFFFF;
+}
+
+/*Features*/
+ .features .subtitle {
+   color: var(--primary-text-color);
+ }
+
+ .features .text {
+   color: var(--description-text-color);
+ }
+
+ /*Team*/
+
+ .team .text {
+   color: var(--description-text-color);
+ }
+
+ /*Footer*/
+
+.footer .address {
+    color: var(--primary-text-color)
+}
+.footer .contact {
+     color: var(--description-text-color)
+}
+ /*Products*/
+
+.products-title {
+    color: var(--primary-text-color)
+}
+
+.products .text {
+    color: var(--description-text-color)
+}
