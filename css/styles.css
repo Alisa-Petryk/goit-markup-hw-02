@@ -14,15 +14,23 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+
+    background-color: var(--white-main-color);
     color: var(--primary-text-color);
+
 }
 
 :root{
     --primary-text-color: #212121;
     --accent-text-color: #2196F3;
     --description-text-color: #757575;
-    --white-text-color: #FFFFFF;
+    --white-main-color: #FFFFFF;
+    --background-dark-color: #2F303A;
+    --background-gray-color: #F5F4FA;
 }
+
 /*Common classes*/
 
 a {
@@ -33,33 +41,40 @@ a {
     list-style: none;
 }
 .button {
-    color: var(--white-text-color);
+    color: var(--white-main-color);
     background-color: var(--accent-text-color);
 
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1.875;
+    line-height: 1.87;
     letter-spacing: 0.06em;
     text-align: center;
 
     cursor: pointer;
 }
+
 .button-secondary {
     color: var(--primary-text-color) ;
     background-color: #F5F4FA   ;
     font-family: 'Roboto', sans-serif;
-
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
-    /* identical to box height, or 162% */
-
     text-align: center;
     letter-spacing: 0.03em;
+
+    cursor: pointer;
 }
-.current {
-    color: var(--white-text-color);
+
+.current-button {
+    color: var(--white-main-color);
+    background-color: var(--accent-text-color);
+}
+
+.button-secondary:hover,
+.button-secondary:focus {
+    color: var(--white-main-color);
     background-color: var(--accent-text-color);
 }
 
@@ -99,25 +114,33 @@ a {
 }
 .logo-accent {
     color: var(--accent-text-color);
-
 }
+
+.logo-white {
+    color: var(--white-main-color);
+}
+
 .logo :hover,
 .logo :focus {
   color: var(--accent-text-color);
 }
 
 /*Site nav*/
-.site-nav .link{
+.site-link {
     color: var(--primary-text-color);
 
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.142;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus
+.current {
+    color: var(--accent-text-color);
+}
+
+.site-nav .site-link:hover,
+.site-nav .site-link:focus
 {
   color: var(--accent-text-color);
 }
@@ -127,7 +150,7 @@ a {
 
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.142;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
@@ -135,14 +158,10 @@ a {
 .site-nav-contact .link:focus {
   color: var(--accent-text-color);
 }
-.site-nav .gray:hover,
-.site-nav .gray:focus {
-  color: var(--accent-text-color);
-}
-
 
 /*Hero*/
 .hero-title {
+    background-color: var(--background-dark-color);
   color: #FFFFFF;
 
     font-weight: 900;
@@ -159,7 +178,7 @@ a {
 
      font-weight: 700;
      font-size: 14px;
-     line-height: 1.142;
+     line-height: 1.14;
      letter-spacing: 0.03em;
      text-transform: uppercase;
  }
@@ -167,20 +186,23 @@ a {
  .features .text {
    color: var(--description-text-color);
 
-     font-weight: 400;
      font-size: 14px;
-     line-height: 1.714;
+     line-height: 1.71;
      letter-spacing: 0.03em;
  }
 
  /*Team*/
+
+.crew {
+    background-color: var(--background-gray-color);
+}
 
 .team .subtitle {
     color: var(--primary-text-color);
 
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.187;
+    line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -190,33 +212,45 @@ a {
 
      font-weight: 400;
      font-size: 16px;
-     line-height: 1.187;
+     line-height: 1.19;
      text-align: center;
      letter-spacing: 0.03em;
  }
 
  /*Footer*/
+.footer {
+    background-color: var(--background-dark-color);
+}
 
 .footer .address {
-    color: var(--white-text-color);
+    color: var(--white-main-color);
 
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.714;
+    line-height: 1.71;
     letter-spacing: 0.03em;
 }
 .footer .contact {
-    color: var(--white-text-color);
+    color: #FFFFFF99;
 
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.714;
+    line-height: 1.71;
     letter-spacing: 0.03em;
-
-
 }
+
+.footer .address:hover,
+.footer .address:focus {
+    color: var(--accent-text-color);
+}
+
+.footer .contact:hover,
+.footer .contact:focus {
+    color: var(--accent-text-color);
+}
+
  /*Products*/
 
 .products h2 {
@@ -232,6 +266,5 @@ a {
     color: var(--description-text-color);
 
     font-size: 16px;
-    line-height: 1.875;
-    letter-spacing: 0.03em;
+    line-height: 1.87;
 }
